@@ -1,0 +1,24 @@
+.footer-container {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;   /* Centers vertically */
+  }
+  
+ .sub-con {
+    width: 200px;
+    box-sizing: border-box;
+    text-align: center; /* Centers the text inside sub-con */
+  } 
+  
+  .text {
+    height: inherit;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white; /* Makes the text visible on a black background */
+  }
+  
