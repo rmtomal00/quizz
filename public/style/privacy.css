@@ -1,0 +1,6 @@
+.p-main{
+    display: flex;
+    flex-direction: column;
+    padding: 2% 10% 3% 10%;
+    font-family: serif;
+}
