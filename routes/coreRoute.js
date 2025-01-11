@@ -17,5 +17,11 @@ CoreRoute.get("/contact", (req, res)=>{
     })
 })
 
+CoreRoute.get('/quizz-manage', (req, res)=>{
+    res.render('manage', {
+        activePage: "quizz"
+    })
+})
+
 
 module.exports = CoreRoute

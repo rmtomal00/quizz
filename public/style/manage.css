@@ -1,0 +1,38 @@
+
+
+.main-body{
+    padding: 2% 5% 3% 5%;
+    width: 100%;
+}
+
+.btn-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.insert{
+    width: 100px;
+    height: inherit;
+    background-color: rgb(8, 139, 96);
+    border: 0px;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+}
+
+.insert:hover{
+    background-color: rgb(0, 100, 67);
+}
+
+.quiz-ma-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0% 0% 0%;
+}
+

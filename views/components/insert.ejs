@@ -1,0 +1,69 @@
+<div class="containerer">
+    <div class="input-con">
+        <p class="input-head">Password</p>
+        <input type="password" placeholder="Password" id="pass">
+    </div>
+
+    <div class="input-con">
+        <p class="input-head">Question</p>
+        <input type="text" placeholder="Question" id="ques">
+    </div>
+
+    <div class="input-con">
+        <p class="input-head">Exam</p>
+        <input type="text" placeholder="Exam" id="exam">
+    </div>
+    
+    <div class="input-con">
+        <p class="input-head">Subject</p>
+        <input type="text" placeholder="Subject" id="subject">
+    </div>
+    
+    <div class="input-con">
+        <p class="input-head">Option A</p>
+        <input type="text" placeholder="Option A" id="opt-1">
+    </div>
+    
+    <div class="input-con">
+        <p class="input-head">Option B</p>
+        <input type="text" placeholder="Option B" id="opt-2">
+    </div>
+    
+    <div class="input-con">
+        <p class="input-head">Option C</p>
+        <input type="text" placeholder="Option C" id="opt-3">
+    </div>
+    
+    <div class="input-con">
+        <p class="input-head">Option D</p>
+        <input type="text" placeholder="Option D" id="opt-4">
+    </div>
+
+    <div class="select-ans">
+        <p class="input-head">
+            Select correct answer
+        </p>
+        <div class="redio-button">
+            <input type="radio" value="opt-1" name="correct-answer" id="opt-a">
+            <label for="opt-a">Option A</label><br>
+            <input type="radio" value="opt-2" name="correct-answer" id="opt-b">
+            <label for="opt-b">Option B</label><br>
+            <input type="radio" value="opt-3" name="correct-answer" id="opt-c">
+            <label for="opt-c">Option C</label><br>
+            <input type="radio" value="opt-4" name="correct-answer" id="opt-d">
+            <label for="opt-d">Option D</label>
+        </div>
+    </div>
+    <div class="submit-con">
+        <button id="send" class="submit" onclick="submitted()" type="button">Submit</button>
+    </div>
+
+    <div class="submit-con">
+        <button id="clear" class="submit" onclick="clearer()" type="button">Clear</button>
+    </div>
+    <div class="submit-con">
+        <p class="response" style="display: none;" id="res-message">
+            Success
+        </p>
+    </div>
+</div>
