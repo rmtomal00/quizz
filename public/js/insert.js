@@ -16,25 +16,25 @@ function submitted() {
 
     // Validate inputs
     if (!password) {
-        alert("Password cant empty")
+        alert("Password can't empty")
         return;
     }else if (!question) {
-        alert("Question cant empty")
+        alert("Question can't empty")
         return;
     } else if (!subject) {
-        alert("Subject cant empty")
+        alert("Subject can't empty")
         return;
     } else if(!optionA) {
-        alert("Option A cant empty")
+        alert("Option A can't empty")
         return;
     } else if(!optionB) {
-        alert("Option B cant empty")
+        alert("Option B can't empty")
         return;
     } else if(!optionC) {
-        alert("Option C cant empty")
+        alert("Option C can't empty")
         return;
     } else if(!optionD) {
-        alert("Option D cant empty")
+        alert("Option D can't empty")
         return;
     }
 

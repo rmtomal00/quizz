@@ -5,8 +5,10 @@ const quizeController = require('./controller/quizeController')
 const coreRoute = require("./routes/coreRoute")
 const path = require('path')
 const port = process.env.PORT || 3000;
+const cors  = require('cors')
 
 app.use(express.json())
+app.use(cors())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, "public")))
 app.set('view engine', 'ejs')
