@@ -38,9 +38,8 @@ function submitted() {
         return;
     }
 
-    fetch("http://161.248.188.69:30201/api/v1/post-quize", {
+    fetch("https://quizz.team71.link/api/v1/post-quize", {
         method: "POST",
-        mode: 'no-cors',
         headers: {
             "Content-Type": "application/json"
         },
@@ -57,6 +56,7 @@ function submitted() {
         if (result['error']) {
             alert(result['message'])
         }else{
+            alert("Question save successfully. Question UID: "+ result.data.uid)
             response.style.display = "block";
             response.innerText = "Question save successfully. Question UID: "+ result.data.uid;
         }
@@ -64,9 +64,6 @@ function submitted() {
         alert(error.message)
     })
 
-    // Display the data (or handle it as needed, e.g., send it to a server)
-    console.log('Form Data:', formData);
-    alert('Form submitted successfully!');
 }
 
 function clearer() {
