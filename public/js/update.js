@@ -102,6 +102,9 @@ function updateData() {
     for(let key of keys){
         const newObjectData = newDataMap.get(key);
         const oldObjectData = oldDataMap.get(key);
+        if(key === "id"){
+            continue;
+        }
         if (key === 'options' && arraysAreEqual(newObjectData, oldObjectData)) {
             continue;
         }

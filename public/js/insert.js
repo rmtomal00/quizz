@@ -77,3 +77,4 @@ function clearer() {
     document.querySelectorAll('input[type="text"]').forEach(input => input.value = '');
     document.querySelectorAll('input[name="correct-answer"]').forEach(radio => radio.checked = false);
 }
+

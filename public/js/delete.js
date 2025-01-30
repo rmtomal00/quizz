@@ -68,7 +68,7 @@ function deleteData() {
     const uid = document.getElementById("uid").value.trim();
     const password = document.getElementById("pass").value.trim();
 
-    const checkTest = document.getElementById('response');
+    const checkTest = document.getElementById('res-message');
 
     if (!checkTest.innerText) {
         alert("You don't check the Question. Please the question first")

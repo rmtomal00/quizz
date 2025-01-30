@@ -2,6 +2,8 @@ const express = require('express');
 const Response = require('../response/response');
 const QuestionService = require('../service/questionService');
 const quizeController = express.Router();
+const fs = require('fs');
+const path = require('path')
 require('dotenv').config()
 
 const respose = new Response();
@@ -126,5 +128,23 @@ quizeController.get("/get-ques-by-id/:uid", async (req, res) => {
         return respose.serverErrorRes(res, error.message);
     }
 })
+
+quizeController.get("/get-html", (req, res) => {
+    const getView = req.query.view
+    var sendComponent;
+    if (getView === "insert") {
+        sendComponent = "components/insert"
+    }else if (getView === "update"){
+        sendComponent = "components/update"
+    }else if(getView === "delete"){
+        sendComponent = "components/delete"
+    }
+    res.render(sendComponent, {}, (err, html) => {
+        if (err) {
+            return res.status(500).json({ message: "Error rendering EJS", error: err.message });
+        }
+        res.send(html); // Send rendered HTML
+    });
+});
 
 module.exports = quizeController

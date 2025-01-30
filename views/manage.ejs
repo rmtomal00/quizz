@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="/style/manage.css">
     <link id="contentbased" rel="stylesheet" href="/style/insert.css">
     
-    <script id="contentbased-js" type="text/javascript" src="/js/delete.js"></script>
+    <script id="contentbased-js" type="text/javascript" src="/js/insert.js"></script>
+    <script type="text/javascript" src="/js/quize.js"></script>
 
 
     <!-- bootstrap css -->
@@ -29,18 +30,20 @@
         </div>
         <div class="quizz-mng-con">
             <div class="btn-section">
-                <button id="insert" class="insert" type="button">Insert</button>
-                <button id="update" class="insert" type="button">Update</button>
-                <button id="delete" class="insert" type="button">Delete</button>
+                <button id="insert" class="insert" type="button" onclick="viewupdate('insert')">Insert</button>
+                <button id="update" class="insert" type="button" onclick="viewupdate('update')">Update</button>
+                <button id="delete" class="insert" type="button" onclick="viewupdate('delete')">Delete</button>
             </div>
             <div class="quiz-ma-con">
-                <%-include("components/delete")%>
+                <%-include("components/insert")%>
             </div>
         </div>
     </div>
 
     
     <%- include('components/footer')%>
+
+
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
