@@ -1,7 +1,9 @@
 function viewupdate(data) {
     console.log(`click data: ${data}`);
 
-    fetch("http://localhost:30201/api/v1/get-html?view=" + data)
+    fetch("http://161.248.188.69:30201/api/v1/get-html?view=" + data, {
+        mode: 'no-cors'
+    })
         .then(response => response.text()) // Convert response to text (HTML)
         .then(html => {
             console.log(html);

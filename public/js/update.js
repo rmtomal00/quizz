@@ -15,8 +15,9 @@ function checkedQuizz() {
     const rbtnc = document.getElementById('opt-c')
     const rbtnd = document.getElementById('opt-d')
 
-    fetch(`http://192.168.2.106:30201/api/v1/get-ques-by-id/${uid.value}`,{
+    fetch(`http://161.248.188.69:30201/api/v1/get-ques-by-id/${uid.value}`,{
         method: "GET",
+        mode: 'no-cors',
         headers:{
             "Content-Type": "application/json"
         }
@@ -125,8 +126,9 @@ function updateData() {
         return;
     }
 
-    fetch('http://192.168.2.106:30201/api/v1/update-quize', {
+    fetch('http://161.248.188.69:30201/api/v1/update-quize', {
         method: "POST",
+        mode: 'no-cors',
         headers: {
             "Content-type": "application/json"
         },

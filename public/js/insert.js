@@ -38,8 +38,9 @@ function submitted() {
         return;
     }
 
-    fetch("http://192.168.2.106:30201/api/v1/post-quize", {
+    fetch("http://161.248.188.69:30201/api/v1/post-quize", {
         method: "POST",
+        mode: 'no-cors',
         headers: {
             "Content-Type": "application/json"
         },
